@@ -1,0 +1,50 @@
+<!doctype>
+<html>
+    <head>
+        <title>Nahee Kim project 2</title>
+        <link href="main01.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li class="nav"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="work.html">scent</a></li>
+                    <li class="nav"><a href="about.html">about</a></li>
+
+                </ul>
+            </div>
+        <div class="content_work">
+          <h1> Peaceful Scent<h1>
+                <div id="slideshow">
+	               <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+	               <button class="right" onclick="plusDivs(1)">&#10095;</button>
+	               <img class="mySlides" src="images/lemon.jpg" width="715px">
+	               <img class="mySlides" src="images/lavender.jpg" width="715px">
+	               <img class="mySlides" src="images/rosemary.jpg" width="715px">
+                </div>
+                <p class="title01"><strong>Scent Makes You Calm</strong></p>
+            </div>
+    </div>
+
+        <script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+
+				}
+				x[slideIndex-1].style.display = "block";
+			}
+		</script>
+    </body>
+</html>

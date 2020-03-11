@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+body {
+    margin: 40px;
+    background-color: white;
+    font-family: "gill sans";
+}
+h1 {
+  font-family: "Helvetica"
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, [col] 1fr);
+    grid-template-rows: repeat(2, [row] auto);
+    color: #444;
+    border-radius: 5px;
+    padding: 0px;
+}
+.box {
+    padding: 10px;
+}
+.a {
+    grid-column: 1/ span 4;
+    grid-row: row;
+}
+.menu {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 10pt;
+}
+.b {
+    grid-column: 1/ span 4;
+    grid-row: 3;
+    font-family: sans-serif;
+}
+.c {
+    grid-column: 1/ span 4;
+    grid-row: 3/ span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 110%;
+    background-position: center;
+    background-size: cover;
+
+
+}
+.d {
+    grid-column: 1/ span 4;
+    grid-row: 5;
+    color: lightpink;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 11pt;
+}
+.e {
+    grid-column: 1/span 4;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 85%;
+    padding: 0px;
+}
+.f {
+    grid-column: 1;
+    grid-row: 1;
+    color: #white;
+    text-align: center;
+    padding: 20px;
+}
+.content {
+    grid-column: col /span 3;
+    grid-row: 4;
+    padding: 30px;
+}
+.content img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.sidebar {
+    grid-column: 4;
+    grid-row: 4;
+    padding: 10px;
+}
+.content_work {
+    grid-column: col /span 4;
+    grid-row: 4;
+    text-align: center;
+    font-family: Helvetica;
+}
+.content_work img{
+    width: 100%;
+    margin-bottom:;30px;
+}
+
+.sidebar_dogs {
+    grid-column: 4;
+    grid-row: 3;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.content_newletter {
+    grid-column: col /span 1;
+    grid-row: 3;
+    padding: 10px;
+    text-align: center;
+}
+.content_newletter img {
+    grid-column: col /span 1;
+    grid-row: 3;
+    width: 100%;
+
+}
+.content_contact {
+    grid-column: 1/ span 3;
+    padding: 30px;
+}
+.sidebar_contact {
+    grid-column: 4;
+    grid-row: 3/4;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+/* Navigation */
+.nav a {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: #666;
+    text-decoration: none;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 120%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.menu li {
+    text-align: center;
+    padding: 20px;
+}
+.menu li a {
+    text-decoration: none;
+    color: black;
+    text-transform:  uppercase;
+    font-family: Helvetica;
+}
+.menu .active {
+    background-color: white;
+}
+/* Content Styles */
+
+h2 {
+    color: #3399cc;
+    font-size: 21pt;
+    font-family: "Helvetica";
+}
+h3 {
+    color: #fff;
+    font-size: 120pt;
+    text-align: center;
+}
+h4 {
+    color: #fff;
+    font-size: 60pt;
+    text-align: center;
+}
+p {
+    font-size: 14pt;
+    font-family: sans-serif
+
+}
+.ogtitle {
+    color: black;
+    font-size: 24pt;
+    text-align: center;
+}
+.title01 {
+    color: black;
+    font-size: 18pt;
+    font-family: Helvetica;
+}
+.title02 {
+    color: #ff6501;
+    font-size: 24pt;
+}
+.title03 {
+    color: #ff6501;
+    font-size: 24pt;
+    text-align: left;
+    font-family: sans-serif;
+    top: 50%;
+    bottom: 50%;
+}
+/* Slideshow */
+#slideshow {position: relative; width:100%;}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #white;
+    border-width: 0px;
+    margin-left: 10px;
+}
+.right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border-width: 0px;
+    margin-right: 10px;
+}
